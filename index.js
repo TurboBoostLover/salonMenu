@@ -5,5 +5,9 @@ const error = () => {
     alert('Sorry that has not been made yet')
 }
 
-schedule.addEventListener('click', error)
+const calender = () => {
+    window.location=('google.com')
+}
+
 pay.addEventListener('click', error)
+schedule.addEventListener('click', calender)

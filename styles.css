@@ -17,7 +17,7 @@ h3 {
     inline-size: auto;
     width:fit-content;
     position: relative;
-    left: 38%;
+    left: 36%;
 }
 
 #services {
@@ -44,6 +44,7 @@ button {
     align-items: center;
     position: relative;
     left: 45%;
+    font-size:x-large;
 }
 
 body {
@@ -61,5 +62,5 @@ h2 {
     inline-size: auto;
     width:fit-content;
     position: relative;
-    left: 46.4%;
+    left: 47%;
 }
