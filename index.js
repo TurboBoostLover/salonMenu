@@ -14,7 +14,11 @@ const calender = () => {
     window.location.href=("https://calendar.google.com/calendar")
 }
 
-pay.addEventListener('click', error)
+const payMe = () => {
+    window.location.href=("https://venmo.com/Nathan-Westergard")
+}
+
+pay.addEventListener('click', payMe)
 schedule.addEventListener('click', calender)
 //about.addEventListener('click', error)
 //services.addEventListener('click', error)
