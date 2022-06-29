@@ -6,7 +6,7 @@ const error = () => {
 }
 
 const calender = () => {
-    window.location=('google.com')
+    window.location.href=("https://google.com")
 }
 
 pay.addEventListener('click', error)
