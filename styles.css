@@ -1,0 +1,22 @@
+title {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+h3 {
+    background-color:  black;
+    color: white;
+}
+
+li {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+button {
+    background-color: red;
+    color: black;
+    height: 75px;
+    width: 150px;
+}
