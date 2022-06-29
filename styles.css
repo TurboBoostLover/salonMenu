@@ -101,7 +101,7 @@ h2 {
   }
 
   @media screen and (max-width: 1000px) {
-    #fadeshow1 {
+    .sidenav {
         display: none;
     }
   }
