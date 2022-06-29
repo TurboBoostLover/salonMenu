@@ -1,9 +1,13 @@
-title {
+h1 {
     background-color: black;
     color: white;
     font-weight: bolder;
     inline-size: auto;
     background-size: auto;
+    text-align: center;
+    width:fit-content;
+    position: relative;
+    left: 39%;
 }
 
 h3 {
@@ -11,7 +15,13 @@ h3 {
     color: white;
     text-align: center;
     inline-size: auto;
-    background-size: auto;
+    width:fit-content;
+    position: relative;
+    left: 38%;
+}
+
+#services {
+    left: 44.5%;
 }
 
 li {
@@ -20,16 +30,20 @@ li {
     font-weight: bold;
     text-align: center;
     inline-size: auto;
-    background-size: auto;
+    width:fit-content;
+    position: relative;
+    left: 47%;
 }
 button {
-    background-color: red;
-    color: black;
+    background-color: black;
+    color: white;
     height: 75px;
     width: 150px; 
     text-align: center;
-    inline-size: auto;
-    background-size: auto;
+    border-color: red;
+    align-items: center;
+    position: relative;
+    left: 45%;
 }
 
 body {
@@ -38,4 +52,14 @@ body {
     background-position: center;
     background-size: cover;
     background-color: pink;
+}
+
+h2 {
+    background-color:  black;
+    color: white;
+    text-align: center;
+    inline-size: auto;
+    width:fit-content;
+    position: relative;
+    left: 46.4%;
 }
