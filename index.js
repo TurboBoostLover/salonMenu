@@ -1,7 +1,7 @@
 const schedule = document.querySelector('#schedule')
 const pay = document.querySelector('#pay')
 const about = document.querySelector('#about')
-const services = document.querySelector('#services')
+const services = document.querySelector('#services2')
 const clients = document.querySelector('#clients')
 const contact = document.querySelector('#contact')
 
