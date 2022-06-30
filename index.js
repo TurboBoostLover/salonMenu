@@ -16,7 +16,7 @@ const payMe = () => {
 }
 
 function passerror() {
-    axios.get("https://nwf24lab.herokuapp.com/errorbutton")
+    axios.get("/errorbutton")
     .then((res) => {
         alert(res.data)
     })
