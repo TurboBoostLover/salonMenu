@@ -16,7 +16,7 @@ rollbar.log('Hello world!')
 rollbar.critical('burning')
 rollbar.warning('On fire')
 rollbar.debug('who knows')
-rollbar.error('adding the last')
+//rollbar.error('adding the last')
 
 app.get('/', (req, res) => {
     rollbar.info('Someone is on the site.')
@@ -30,6 +30,11 @@ app.get('/css', (req, res) => {
 app.get('/js', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.js'))
 })
+
+try {blah()}
+catch (error) {
+    rollbar.error(error)
+}
 
 
 
