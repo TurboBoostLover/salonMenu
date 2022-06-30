@@ -16,10 +16,6 @@ rollbar.log('Hello world!')
 
 app.get('/', (req, res) => {
     rollbar.info('Someone is on the site.')
-    rollbar.critical('jk')
-    rollbar.error('jk')
-    rollbar.warning('jk')
-    rollbar.debug('jk')
     res.sendFile(path.join(__dirname, '../index.html'))
 })
 
