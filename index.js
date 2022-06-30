@@ -17,4 +17,4 @@ const payMe = () => {
 
 pay.addEventListener('click', payMe)
 schedule.addEventListener('click', calender)
-test.addEventListener('click'. error)
+test.addEventListener('click', error)

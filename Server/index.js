@@ -15,6 +15,7 @@ var rollbar = new Rollbar({
 rollbar.log('Hello world!')
 
 app.get('/', (req, res) => {
+    rollbar.info('Someone is on the site.')
     res.sendFile(path.join(__dirname, '../index.html'))
 })
 
