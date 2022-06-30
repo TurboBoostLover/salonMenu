@@ -1,7 +1,9 @@
 const express = require('express')
 const path = require('path')
+const cors = require('cors')
 
 const app = express()
+app.use(cors())
 
 // include and initialize the rollbar library with your access token
 var Rollbar = require('rollbar')
@@ -14,9 +16,7 @@ var rollbar = new Rollbar({
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!')
 rollbar.critical('burning')
-rollbar.warning('On fire')
 rollbar.debug('who knows')
-//rollbar.error('adding the last')
 
 app.get('/', (req, res) => {
     rollbar.info('Someone is on the site.')
@@ -36,7 +36,10 @@ catch (error) {
     rollbar.error(error)
 }
 
-
+app.get('/get-my-name', (req, res) => {
+    rollbar.warning('Someone wants a error')
+    res.send('Here is an error')
+})
 
 const port = process.env.PORT || 6900
 

@@ -15,6 +15,13 @@ const payMe = () => {
     window.location.href=("https://venmo.com/Nathan-Westergard")
 }
 
+function passerror() {
+    axios.get("/get-my-name")
+    .then((res) => {
+        alert(res.data)
+    })
+}
+
 pay.addEventListener('click', payMe)
 schedule.addEventListener('click', calender)
-test.addEventListener('click', error)
+test.addEventListener('click', passerror)
