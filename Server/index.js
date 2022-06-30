@@ -36,9 +36,9 @@ catch (error) {
     rollbar.error(error)
 }
 
-app.get('/get-my-name', (req, res) => {
-    rollbar.warning('Someone wants a error')
+app.get('/errorbutton', (req, res) => {
     res.send('Here is an error')
+    rollbar.warning('Someone wants a error')
 })
 
 const port = process.env.PORT || 6900

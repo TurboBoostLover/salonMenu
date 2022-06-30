@@ -16,7 +16,7 @@ const payMe = () => {
 }
 
 function passerror() {
-    axios.get("/get-my-name")
+    axios.get("/errorbutton")
     .then((res) => {
         alert(res.data)
     })
