@@ -16,6 +16,7 @@ rollbar.log('Hello world!')
 rollbar.critical('burning')
 rollbar.warning('On fire')
 rollbar.debug('who knows')
+rollbar.error('adding the last')
 
 app.get('/', (req, res) => {
     rollbar.info('Someone is on the site.')
