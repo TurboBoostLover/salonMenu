@@ -13,6 +13,9 @@ var rollbar = new Rollbar({
 
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!')
+rollbar.critical('burning')
+rollbar.warning('On fire')
+rollbar.debug('who knows')
 
 app.get('/', (req, res) => {
     rollbar.info('Someone is on the site.')
