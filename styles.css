@@ -105,3 +105,8 @@ h2 {
         display: none;
     }
   }
+
+  #test {
+    position:absolute;
+    left: 900px;
+  }
