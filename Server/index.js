@@ -27,6 +27,11 @@ app.get('/js', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.js'))
 })
 
+app.get('/errr', (req, res) => {
+    rollbar.critical('It is on fire')
+    res.status(200).send(error)
+})
+
 const port = process.env.PORT || 6900
 
 app.listen(port, () => {
